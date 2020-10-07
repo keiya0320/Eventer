@@ -1,6 +1,14 @@
-<div class="contents row">
-  <p>xxxxxxxxxxx  Hello World</p>
-  <%= link_to "New Post", new_event_path, class:"post-btn"%>
+<div class="top-message-1">
+  <h2 class="text-center">Let's create Events!</h2>
+</div>
+<div class="new-event">
+  <%= link_to "New Post", new_event_path, class:"btn btn-outline-warning btn-block"%>
+</div>
+
+<div class="top-message-2">
+  <h3 class="text-center">イベント一覧(新着順)</h3>
+</div>
+  
   <% @events.each do |event| %>
     <div class="event-contents">
       <p><%= event.title %></p>
