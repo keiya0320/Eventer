@@ -1,0 +1,11 @@
+<div class="contents row">
+  <p>xxxxxxxxxxx  Hello World</p>
+  <% @events.each do |event| %>
+    <div class="event-contents">
+      <p><%= event.title %></p>
+      <span class="name">
+        <%= event.date %>
+      </span>
+    </div>
+  <% end %>
+</div>
