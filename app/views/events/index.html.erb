@@ -1,10 +1,11 @@
 <div class="contents row">
   <p>xxxxxxxxxxx  Hello World</p>
+  <%= link_to "New Post", new_event_path, class:"post-btn"%>
   <% @events.each do |event| %>
     <div class="event-contents">
       <p><%= event.title %></p>
       <span class="name">
-        <%= event.date %>
+        <%= event.done_at %>
       </span>
     </div>
   <% end %>
