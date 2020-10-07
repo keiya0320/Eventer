@@ -67,4 +67,3 @@ GyazoURL: https://gyazo.com/2d578b0928f4e45a068d435f70295e3c
 
 * ローカルでの動作方法
 ruby: 2.6.5
-rails: 6.0.0
