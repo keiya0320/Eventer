@@ -15,7 +15,7 @@
       <div class="card-body">
         <h5 class="card-title"><%= event.title %></h5>
         <p class="card-text"><%= event.explanation %></p>
-        <a href="#" class="btn btn-primary">Event details</a>
+        <%= link_to "Event details", event_path(event.id), method: :get, class:"btn btn-primary"%>
       </div>
     </div>
   </div>

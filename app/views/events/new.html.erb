@@ -7,6 +7,9 @@
         <%= form.text_field :title, placeholder: "Title" %>
       </div>
       <div class="form-group">
+        <%= form.file_field :image, class: 'hidden' %>
+      </div>
+      <div class="form-group">
         <%= form.text_area :explanation, placeholder: "概要" %>
       </div>
       <div class="form-group">
