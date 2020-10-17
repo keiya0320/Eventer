@@ -1,0 +1,25 @@
+<div class="contents row"> <div class="container">
+<h3>編集する</h3>
+<%= form_with(model: @event, local: true) do |form| %>
+  <div class="form-group">
+        <%= form.text_field :title, placeholder: "Title" %>
+      </div>
+      <div class="form-group">
+        <%= form.file_field :image, class: 'hidden' %>
+      </div>
+      <div class="form-group">
+        <%= form.text_area :explanation, placeholder: "概要" %>
+      </div>
+      <div class="form-group">
+        <%= form.datetime_select :done_at, placeholder: "開催日時" %>
+      </div>
+      <div class="form-group">
+        <%= form.number_field :people, min: 0, placeholder: "人数" %>
+      </div>
+      <div class="form-group">
+        <%= form.text_area :address, placeholder: "実施場所" %>
+      </div>
+
+      <%= form.submit "SEND", class: "btn btn-primary" %>
+<% end %> </div>
+</div>
