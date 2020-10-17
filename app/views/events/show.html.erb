@@ -1,15 +1,49 @@
-<div class="contents row">
-    <div class="more">
+<div class="more">
       <ul class="more_list">
         <li>
-          <%= link_to '編集', edit_event_path(@event.id), method: :get %>
+          <%= link_to '編集する', edit_event_path(@event.id), method: :get, class:"btn btn-success" %>
         </li>
         <li>
-          <%= link_to '削除', event_path(@event.id), method: :delete %>
+          <%= link_to '削除する', event_path(@event.id), method: :delete, class:"btn btn-success" %>
         </li>
       </ul>
-    </div>
-    <%= image_tag @event.image.variant(resize:'300x300') %>
-    <span class="name"><%= @event.title %>
-    </span>
 </div>
+
+
+
+<div class="event-show">
+  <div class="contents">
+    <div class="event-title">
+      <%= @event.title%>
+    </div>
+    
+    <div class="event-image">
+      <%= image_tag @event.image.variant(resize:'300x300') if @event.image.attached? %>
+    </div>
+    <div class="event-date">
+      <p>開催日時</p>
+      <%= @event.done_at %>
+    </div>
+    <div class="event-address">
+      <p>開催場所</p>
+      <%= @event.address %>
+    </div>
+  </div>
+</div>
+
+<div class="event-people-info">
+  <div class="event-people">
+    <p>現在の参加人数</p>
+    <%#= イベント参加の人数 %>
+  </div>
+  <div class="event-people-all">
+    <p>イベント参加者一覧</p>
+    <%#=参加者一覧をeachで一覧表示する%>
+  </div>
+</div>
+
+<div class="event-comments">
+  <p>コメント</p>
+</div>
+
+

@@ -30,5 +30,25 @@
   margin: 50px;
 }
 
+.event-show {
+  text-align: center;
+  border: 10px solid lightgray;
+  width: 60%;
+  margin: 20px auto;
+}
 
 
+.more_list {
+  list-style: none;
+  text-align: center;
+}
+
+.more_list li {
+  display: inline;
+  margin: 20px 50px;
+}
+
+.event-title {
+  font-weight: bold;
+  font-size: 50px;
+}
